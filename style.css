@@ -1,1 +1,380 @@
-# Mis455_Midterm_Practical
+ /* Mis455_Midterm_Practical */
+
+ *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+/* Home section  */
+#home_Section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home_Section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/homePagePic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(47%);
+}
+
+#home_content{
+    position: absolute;
+}
+
+#home_content h1{
+    color: rgb(255, 255, 255);
+}
+
+#home_content h2{
+    color: rgb(255, 255, 255);
+}
+
+#home_content a{
+    color: rgb(255, 255, 255);
+    border: 1.5px rgb(39, 21, 21) solid;
+    font-size: 1.2rem;
+    padding: 6px;
+    border-radius: 19px 4px;
+    text-decoration: none;
+}
+
+#home_content a:hover{
+    color: rgb(1, 1, 1);
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* header section design part start */
+#header{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+    line-height: 60px;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar h1{
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    padding: 8px;
+}
+
+#navbar ul{
+    margin-left: 120px;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+#navbar div a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 29px;
+}
+
+#navbar a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+#google_search_part a{
+    font-size: 1.3rem;
+}
+/* header section design part end */
+
+
+/* Menu Section css start  */
+
+#menu{
+    padding: 25px 0 25px 0;
+    background-color: #ffffff;
+}
+
+#meunu_h1{
+    color: rgb(142, 142, 17);
+    padding: 25px 0 25px 0;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#menu_row{
+    display: flex;
+    padding: 0 100px 0 100px;
+}
+
+#menu_coloumn{
+    box-shadow: 2px 2px 2px #bbb;
+    border: 1px solid rgb(182, 170, 170);
+    background-color: #fff;
+    margin: 10px;
+    padding: 12px;
+    flex: 1;
+}
+
+#menu_coloumn h2{
+    background-color: rgb(142, 142, 17);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid red;
+}
+
+#image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+}
+
+
+/* Chef part begin */
+.chef_h1{
+    text-align: center;
+    color: rgb(142, 142, 17);
+    padding: 25px 0 25px 0;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.chef_details{
+    height: 349px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #eaeaea;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 63px;
+}
+
+.image_part{
+    width: 1200px;
+    height: 235px;
+    margin: auto;
+}
+
+.image_part img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 23px;
+}
+
+.Chef_identity{
+    text-align: center;
+    margin-left: 2%;
+    padding: 12%;
+}
+
+
+.hr{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Chef part end  */
+
+
+/* About part Begin  */
+#about{
+    padding: 25px 0 25px 0;
+}
+
+#about_h1{
+    text-align: center;
+    color: rgb(142, 142, 17);
+    padding: 25px 0 25px 0;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#about_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 100px 0 100px;
+}
+
+#about_coloumn{
+    flex: 1;
+}
+
+#about_img{
+    width: 377px;
+    height: 330px;
+    border-radius: 63%;
+    margin: auto;
+}
+
+#about_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+#about_coloumn p{
+    text-align: center;
+    font-style: italic;
+}
+
+#about_coloumn h2{
+    text-align: center;
+    font-style: italic;
+}
+/* About part end */
+
+/* Contact Part Begin */
+
+#Contact{
+    padding: 25px 0 25px 0;
+}
+
+#contact_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px 0 100px;
+    flex-wrap: wrap;
+}
+
+#contact_h1{
+    text-align: center;
+    color: rgb(142, 142, 17);
+    padding: 25px 0 25px 0;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.contact_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.contact_col p{
+    font-weight: bold;
+    color: black;
+    padding: 5px;
+}
+
+.contact_col p a{
+    color: black;
+    text-decoration: none;
+}
+
+.contact_col i{
+    padding: 5px;
+}
+
+
+.contact_col form{
+    display: flex;
+    flex-direction: column;
+    background-color: #0f0f0f;
+    width: 75%;
+    padding: 19px;
+}
+
+.contact_col h2{
+    color: #ffffff;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 15px;
+}
+
+.contact_col form input{
+    padding: 15px;
+}
+
+.contact_col form textarea{
+    height: 80px;
+    padding: 8px;
+}
+
+.contact_col form button{
+    padding: 10px;
+    margin: auto;
+    margin-top: 4%;
+    border-radius: 11px 0;
+}
+
+
+
+/* Footer Start */
+footer{
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(25, 25, 25);
+    width: 100%;
+    height: 210px;
+    color: rgb(255, 255, 255);
+}
+
+footer i{
+    margin: 6px;
+}
+
+/* Footer End */
